@@ -1,13 +1,17 @@
 <template>
   <div id="app">
     <h1>Problema de Monty Hall</h1>
+    <GiftBox />
   </div>
 </template>
 
 <script>
-export default {
+    import GiftBox from './components/GiftBox.vue';
 
-}
+    export default {
+        name: 'App',
+        components: { GiftBox }
+    }
 </script>
 
 <style>
