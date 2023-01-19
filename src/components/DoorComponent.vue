@@ -5,7 +5,7 @@
     </div>
     <div class="door" @click="selected = !selected" :class="{ open }">
         <div class="number" :class="{ selected }">{{ number }}</div>
-        <div class="knob" :class="{ selected }" @click="open = true"></div>
+        <div class="knob" :class="{ selected }" @click="open = true, $emit('event', number, open)"></div>
     </div>
   </div>
 </template>
